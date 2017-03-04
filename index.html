@@ -1,35 +1,16 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="计算机与信息工程男子篮球队">
-    <meta name="author" content="blackGan">
-    <link href="folder/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="basketballCss/HomeCss.css"/>
+    <meta charset="UTF-8">
     <title>计科男篮</title>
-    <style>
-        #welBody{
-            width: 100%;
-            text-align: center;
-            font-size: 19px;
-            position: absolute;
-            left:0;
-            top: 100px;
-        }
-    </style>
 </head>
 <body style="background-color: black;">
-<div class="col-sm-8 col-sm-offset-2">
-    <canvas id = "canvas" width="100%" height="500" ></canvas>
+<canvas id = "canvas" width="500" height="500">
+</canvas>
+<div>
+    <a href="index.html">欢迎来到计科男篮</a>
 </div>
-<div id="welBody">
-    <a href="home.html">欢迎来到计科男篮</a>
-</div>
-<script src="folder/jquery-2.0.3.js"></script>
-<script src="folder/bootstrap.min.js"></script>
 <script>
+
     var c = document.getElementById('canvas');
     var $ = c.getContext('2d');
     var w = c.width = window.innerWidth;
